@@ -1,0 +1,26 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+  "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title>intend.js - Mocha Spec Runner</title>
+  <link rel="stylesheet" href="lib/mocha-1.7.0/mocha.css" />
+  <script type="text/javascript" src="lib/mocha-1.7.0/mocha.js"></script>
+  <script type="text/javascript" src="lib/expect.js/expect.js"></script>
+  <script type="text/javascript">
+    mocha.setup('bdd');
+  </script>
+
+  <script type="text/javascript" src="src/intend.js"></script>
+  <script type="text/javascript" src="src/intend.spec.js"></script>
+
+  <script type="text/javascript">
+    onload = function() {
+      var runner = mocha.run();
+    };
+  </script>
+
+</head>
+<body>
+  <div id="mocha"></div>
+</body>
+</html>
